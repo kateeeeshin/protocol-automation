@@ -97,69 +97,68 @@ old_ipstoretemp <- "IPSTORETEMP"
 
 ############CHANGE FROM HERE################
 
-protocolnum <- ""
-codeA <- ""
-codeB <- ""
-PI   <- ""
-instit <- ""
-sponsor <- ""
-sponsoremail <- ""
-labname <- ""
-cohort <- ""
-cohortN <- ""
-totalsubjN <- ""
-trialday <- ""
-period <- ""
-periday <- ""
-totalmonth <- ""
-hlA <- ""
-hlB <- ""
-washday <- ""
-washN <- ""
-minwash <- ""
-hlwashA <- ""
-hlwashB <- ""
-rescreen <- ""
-doseA <- ""
-doseB <- ""
-pkpoints <- ""
-mainpkday <- ""
-RTn <- ""
-TRn <- ""
-minsubj <- ""
-dropout <- ""
-coeff <- ""
-adminroute <- ""
-minage <- ""
-maxage <- ""
-aesi <- ""
-aesidrugname <- ""
-aesisymp <- ""
-saesi <- ""
-saesidrugname <- ""
-saesisymp <- ""
-sorp <- ""
-pkstoreyear <- ""
-contraceptionday <- ""
-ncaprogram <- ""
-totalblood <- ""
-manufactA <- ""
-drugnameA <- ""
-activeingA <- ""
-formA <- ""
-storageA <- ""
-batchA <- ""
-manufactB <- ""
-drugnameB <- ""
-activeingB <- ""
-formB <- ""
-storageB <- ""
-batchB <- ""
-indication <- ""
-sitenation <- ""
-p1dday <- ""
-p2dday <- ""
-ipstoretemp <- ""
+#INSERT NEEDED VARIABLES WITHIN quotation marks
+
+protocolnum <- "" #Add protocol number (e.g., ABC123DEF456)
+codeA <- "" #Add test drug's code name (e.g., ABC-123)
+codeB <- "" #Add reference drug's code name (e.g., DEF-456)
+PI   <- "" #Add PI full name (e.g., Professor Danny Kim)
+instit <- "" #Add trial institution name (e.g., University of OOO, OOO Hospital)
+sponsor <- "" #Add sponsor name (e.g., OOO Pharmaceutical Co.,LTD.)
+sponsoremail <- "" #Add sponsor emergency e-mail for AE/SAE reporting (abcde@gmail.com)
+labname <- "" #Add laboratory name (e.g., GHI Lab Co.,LTD.) 
+cohort <- "" #Add number of cohorts included (e.g., 2)
+cohortN <- "" #Add number of participants in each cohort (e.g., 22)
+totalsubjN <- "" #Add total number of participants enrolled (e.g., 44)
+trialday <- "" #Add how many WEEKS participants has to be involved in the trial process (e.g., 6) 
+period <- "" #Add how many periods to be conducted (e.g., 2)
+periday <- "" #Add how many days in each period (e.g., 7)
+totalmonth <- "" #Add expected total months for trial completion (e.g., 12)
+hlA <- "" #Add known half-life of test drug (e.g., 12.3)
+hlB <- "" #Add known half-life of reference drug (e.g., 13.8)
+washday <- "" #Add how many days in washout period (e.g., 7)
+washN <- "" #Add how many washout period set (e.g., 1)
+minwash <- "" #Add minimum days to be set for washout period based on half-lives of IMPs (e.g., 3)
+rescreen <- "" #Add how many times of rescreening accepted (e.g., 1)
+doseA <- "" #Add dose of test drug (e.g., 10 mg) - need units as well
+doseB <- "" #Add dose of reference drug (e.g., 5 mg) - need units as well
+pkpoints <- "" #Add PK timepoints (e.g., 0 at pre-dose, 0.33, 0.5, 1, 1.5, 2, 4, 8, 12, and 24h at post-dose)
+mainpkday <- "" #Add main PK days (e.g., 0D, 4D, 7D)
+RTn <- "" #Add number of participants in RT sequence (e.g., 22)
+TRn <- "" #Add number of participants in TR sequence (e.g., 22)
+minsubj <- "" #Add minimum number of participants needed by sample size calculation (e.g., 18)
+dropout <- "" #Add dropout rate (%) expected for sample size calculation (e.g., 30)
+coeff <- "" #Add inter-individual variability coefficient (%) for primary variable for sample size calculation (e.g., 19.24)
+adminroute <- "" #Add administration route (e.g., oral/intravenous/subcutaneous)
+minage <- "" #Add minimum age to be enrolled (e.g., 19)
+maxage <- "" #Add maximum age to be enrolled (e.g., 55)
+aesi <- "" #Add adverse event in special interest (AESI) for IMP (e.g., hypoglycemia)
+aesisymp <- "" #Add AESI's symptoms (e.g., trembling, anxiety, confusion, palpitations, hunger, tingling, dizziness, or shallow breathing)
+saesi <- "" #Add serious adverse event in special interest (SAESI) for IMP (e.g., lactic acidosis)
+saesidrugname <- "" #Add drug name causing SAESI (e.g., ABC-123)
+saesisymp <- "" #Add SAESI symptoms (e.g., thirst, weakness, muscle pain, shortness of breath, or abdominal pain)
+sorp <- "" #Add serum or plasma for PK (e.g., plasma)
+pkstoreyear <- "" #Add how many years PK samples can be stored (e.g., 15)
+contraceptionday <- "" #Add how many days participants have to be in contracepted after last dose (e.g., 90)
+ncaprogram <- "" #Add NCA analysis program name (e.g., Phoenix WinNonlin (Version 8.6.1, Certara L.P.))
+totalblood <- "" #Add total blood volume collected (mL) including safety assessment + PK (e.g., 150)
+manufactA <- "" #Add manufacturer name for test drug (e.g., ABC Pharma.)
+drugnameA <- "" #Add product name for test drug (e.g.,Empazin Tab 10 mg)
+activeingA <- "" #Add active ingredient for test drug (e.g., Empagliflozin)
+formA <- "" #Add formulation for test drug (e.g., Round, pale yellow, biconvex, bevel-edged film-coated tablet)
+storageA <- "" #Add storage information for test drug (e.g., Store in a sealed container at room temperature (1-30℃))
+batchA <- "" #Add batch number for test drug (e.g., AB12345)
+manufactB <- "" #Add manufacturer name for reference drug (e.g., ABC Pharma.)
+drugnameB <- "" #Add product name for reference drug (e.g.,Empazin Tab 10 mg)
+activeingB <- "" #Add active ingredient for reference drug (e.g., Empagliflozin)
+formB <- "" #Add formulation for reference drug (e.g., Round, pale yellow, biconvex, bevel-edged film-coated tablet)
+storageB <- "" #Add storage information for reference drug (e.g., Store in a sealed container at room temperature (1-30℃))
+batchB <- "" #Add batch number for reference drug (e.g., AB12345)
+indication <- "" #Add target indication (e.g., T2DM) or you can just input N/A as well
+sitenation <- "" #Add clinical trial site nation (e.g., South Korea)
+p1dday <- "" #Add drug administration day of period 1 (e.g., 1D)
+p2dday <- "" #Add drug administration day of period 2 (e.g., 10D)
+ipstoretemp <- "" #Add IMP storage temperature (e.g., 1-30)
 
 #########CHANGE UNTIL HERE(DONT HAVE TO CHANGE ANYTHING BELOW)############
 
@@ -188,8 +187,6 @@ for (i in seq_along(code_chunks)) {
   code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_washday, washday)
   code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_minwash, minwash)
   code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_washN, washN)
-  code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_hlwashA, hlwashA)
-  code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_hlwashB, hlwashB)
   code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_rescreen, rescreen)
   code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_pkpoints, pkpoints)
   code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_mainpkday, mainpkday)
@@ -202,7 +199,6 @@ for (i in seq_along(code_chunks)) {
   code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_minage, minage)
   code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_maxage, maxage)
   code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_aesi, aesi)
-  code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_aesidrugname, aesidrugname)
   code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_aesisymp, aesisymp)
   code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_saesi, saesi)
   code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_saesidrugname, saesidrugname)
@@ -234,13 +230,13 @@ for (i in seq_along(code_chunks)) {
 # Update the code chunks
 knitr::knit_code$set(code_chunks)
 
-drug_info <- list(IPcode_A = codeA, IPcode_B = codeB, AEspecialinterest = aesi, AESI_drugname = aesidrugname, AESIsymptoms = aesisymp, SAEspecialinterest = saesi, SAESI_drugname = saesidrugname, SAESIsymptoms = saesisymp, manufact_nameA = manufactA, manufact_nameB = manufactB, drug_nameA = drugnameA, drug_nameB = drugnameB, activeingred_A = activeingA, activeingred_B = activeingB, formulation_A = formA, formulation_B = formB, storage_A = storageA, storage_B = storageB, batch_A = batchA, batch_B = batchB, IP_storetemp = ipstoretemp)
+drug_info <- list(IPcode_A = codeA, IPcode_B = codeB, AEspecialinterest = aesi, AESIsymptoms = aesisymp, SAEspecialinterest = saesi, SAESI_drugname = saesidrugname, SAESIsymptoms = saesisymp, manufact_nameA = manufactA, manufact_nameB = manufactB, drug_nameA = drugnameA, drug_nameB = drugnameB, activeingred_A = activeingA, activeingred_B = activeingB, formulation_A = formA, formulation_B = formB, storage_A = storageA, storage_B = storageB, batch_A = batchA, batch_B = batchB, IP_storetemp = ipstoretemp)
 
 cohort_info <- list(cohortmany = cohort, cohort_N = cohortN, total_N = totalsubjN)
 
 geninfo <- list(screen_N = rescreen, prot_num = protocolnum, PI_name = PI, sponsor_name = sponsor, sponsor_email <- sponsoremail, institution_name = instit, lab_name = labname, ct_day = trialday, total_peri = period, peri_n = periday, total_month = totalmonth, washout_day = washday, minwashday = minwash, washout_N = washN, rtn = RTn, trn = TRn, MINsubj = minsubj, dropout_percent = dropout, coeff_sample = coeff, admin_route = adminroute, min_age = minage, max_age = maxage, contraception = contraceptionday, target_indication = indication, site_nation = sitenation)
 
-pk_info <- list(halflife_A = hlA, halflife_B = hlB, washoutbyhlA = hlwashA, washoutbyhlB = hlwashB, dose_A = doseA, dose_B = doseB, PK_points = pkpoints, mainPKday = mainpkday, serum_plasma = sorp, pkstore_year = pkstoreyear, NCA_program = ncaprogram, total_bloodvolume = totalblood, p1_dday = p1dday, p2_dday = p2dday)
+pk_info <- list(halflife_A = hlA, halflife_B = hlB, dose_A = doseA, dose_B = doseB, PK_points = pkpoints, mainPKday = mainpkday, serum_plasma = sorp, pkstore_year = pkstoreyear, NCA_program = ncaprogram, total_bloodvolume = totalblood, p1_dday = p1dday, p2_dday = p2dday)
 
 ```
 
@@ -490,7 +486,7 @@ flextable(sequencetable1) %>%
 
 **Number of Period:** 2 Periods (Period 1, Period 2)  
 
-**Rationale for Washout Period:** Considering the half-lives of each investigational drugs (`r drug_info$IPcode_A` approximately `r pk_info$washoutbyhlA` hours, `r drug_info$IPcode_B` approximately `r pk_info$washoutbyhlB` hours), it is determined that a period of at least `r geninfo$minwashday` days or more would be necessary for complete elimination of the drugs from the body (i.e., more than 5 times the elimination half-life). Taking into account the trial schedule, a `r geninfo$washout_day`-day washout period is established.  
+**Rationale for Washout Period:** Considering the half-lives of each investigational drugs (`r drug_info$IPcode_A` approximately `r pk_info$hlA` hours, `r drug_info$IPcode_B` approximately `r pk_info$hlB` hours), it is determined that a period of at least `r geninfo$minwashday` days or more would be necessary for complete elimination of the drugs from the body (i.e., more than 5 times the elimination half-life). Taking into account the trial schedule, a `r geninfo$washout_day`-day washout period is established.  
 
 **Number of Participants:**
 Approximately `r cohort_info$total_N` participants (`r cohort_info$coh_N` participants per Sequence group)  
@@ -670,7 +666,7 @@ flextable(sequencetable2) %>%
 
 This clinical trial is designed as a crossover study to investigate drug interactions, aiming to minimize inter-individual variability.
 
-Considering the half-lives of each investigational medicinal products (IMPs) (`r drug_info$IPcode_A` approximately `r pk_info$washoutbyhlA` hours, `r drug_info$IPcode_B` approximately `r pk_info$washoutbyhlB` hours), it is determined that a period of at least `r geninfo$minwashday` days or more would be necessary for complete elimination of the drugs from the body (i.e., more than 5 times the elimination half-life). Taking into account the trial schedule, a `r geninfo$washout_day` day washout period is established.
+Considering the half-lives of each investigational medicinal products (IMPs) (`r drug_info$IPcode_A` approximately `r pk_info$hlA` hours, `r drug_info$IPcode_B` approximately `r pk_info$hlB` hours), it is determined that a period of at least `r geninfo$minwashday` days or more would be necessary for complete elimination of the drugs from the body (i.e., more than 5 times the elimination half-life). Taking into account the trial schedule, a `r geninfo$washout_day` day washout period is established.
 
 </br>
 
