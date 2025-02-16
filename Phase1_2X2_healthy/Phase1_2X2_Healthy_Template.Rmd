@@ -157,7 +157,7 @@ batchB <- "" #Add batch number for reference drug (e.g., AB12345)
 indication <- "" #Add target indication (e.g., T2DM) or you can just input N/A as well
 sitenation <- "" #Add clinical trial site nation (e.g., South Korea)
 p1dday <- "" #Add drug administration day of period 1 (e.g., 1D)
-p2dday <- "" #Add drug administration day of period 2 (e.g., 10D)
+p2dday <- "" #Add drug administration day of period 2 (e.g., 8D)
 ipstoretemp <- "" #Add IMP storage temperature (e.g., 1-30)
 
 #########CHANGE UNTIL HERE(DONT HAVE TO CHANGE ANYTHING BELOW)############
