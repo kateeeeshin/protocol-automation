@@ -6,9 +6,7 @@ output:
     reference_docx: "../word-template.docx"
     number_sections: true
 always_allow_html: yes
-editor_options: 
-  markdown: 
-    wrap: sentence
+
 ---
 
 ```{r setup, incldue=FALSE, echo=FALSE}
