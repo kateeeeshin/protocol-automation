@@ -242,7 +242,7 @@ pk_info <- list(halflife_A = hlA, halflife_B = hlB, dose_A = doseA, dose_B = dos
 
 ```{r info summary table}
 V1 <- c("Protocol Number", "Institution", "Investigational Medicinal Product(s)", "Principal Investigator", "Sponsor", "Version", "Phase")
-V2 <- c("PROTNUMB", "INSTITUTION", "CODEA, CODEB", "PINAME", "SPONSORNAME", "1.0", "Phase I")
+V2 <- c("PROTNUMB", "INSTITUTION", "CODEA, CODEB", "PINAME", "SPONSORNAME", "1.0", "Phase I (Bioequivalence Study")
 
 sumdata <- data.frame(V1, V2)
 
