@@ -39,6 +39,7 @@ old_PI  <- "PINAME"
 old_instit <- "INSTITUTION"
 old_sponsor <- "SPONSORNAME"
 old_sponsoremail <- "SPONSOREMAIL"
+old_croname <- "CRONAME"
 old_labname <- "LABNAME"
 old_cohort <- "COHORT#"
 old_cohortN <- "COHORTN"
@@ -106,6 +107,7 @@ PI   <- "" #Add PI full name (e.g., Professor Danny Kim)
 instit <- "" #Add trial institution name (e.g., University of OOO, OOO Hospital)
 sponsor <- "" #Add sponsor name (e.g., OOO Pharmaceutical Co.,LTD.)
 sponsoremail <- "" #Add sponsor emergency e-mail for AE/SAE reporting (abcde@gmail.com)
+croname <- "" #Add CRO name (e.g., ABC CRO Ltd.)
 labname <- "" #Add laboratory name (e.g., GHI Lab Co.,LTD.) 
 cohort <- "" #Add number of cohorts included (e.g., 2)
 cohortN <- "" #Add number of participants in each cohort (e.g., 22)
@@ -174,6 +176,7 @@ for (i in seq_along(code_chunks)) {
   code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_instit, instit)
   code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_sponsor, sponsor)
   code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_sponsoremail, sponsoremail)
+  code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_croname, croname)
   code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_labname, labname)
   code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_cohort, cohort)
   code_chunks[[i]] <- str_replace_all(code_chunks[[i]], old_cohortN, cohortN)
@@ -234,7 +237,7 @@ drug_info <- list(IPcode_A = codeA, IPcode_B = codeB, AEspecialinterest = aesi, 
 
 cohort_info <- list(cohortmany = cohort, cohort_N = cohortN, total_N = totalsubjN)
 
-geninfo <- list(screen_N = rescreen, prot_num = protocolnum, PI_name = PI, sponsor_name = sponsor, sponsor_email <- sponsoremail, institution_name = instit, lab_name = labname, ct_day = trialday, total_peri = period, peri_n = periday, total_month = totalmonth, washout_day = washday, minwashday = minwash, washout_N = washN, rtn = RTn, trn = TRn, MINsubj = minsubj, dropout_percent = dropout, coeff_sample = coeff, admin_route = adminroute, min_age = minage, max_age = maxage, contraception = contraceptionday, target_indication = indication, site_nation = sitenation)
+geninfo <- list(screen_N = rescreen, prot_num = protocolnum, PI_name = PI, sponsor_name = sponsor, sponsor_email <- sponsoremail, institution_name = instit, CROname = croname, lab_name = labname, ct_day = trialday, total_peri = period, peri_n = periday, total_month = totalmonth, washout_day = washday, minwashday = minwash, washout_N = washN, rtn = RTn, trn = TRn, MINsubj = minsubj, dropout_percent = dropout, coeff_sample = coeff, admin_route = adminroute, min_age = minage, max_age = maxage, contraception = contraceptionday, target_indication = indication, site_nation = sitenation)
 
 pk_info <- list(halflife_A = hlA, halflife_B = hlB, dose_A = doseA, dose_B = doseB, PK_points = pkpoints, mainPKday = mainpkday, serum_plasma = sorp, pkstore_year = pkstoreyear, NCA_program = ncaprogram, total_bloodvolume = totalblood, p1_dday = p1dday, p2_dday = p2dday)
 
