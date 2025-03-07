@@ -1,6 +1,6 @@
 ---
 title: "Clinical Study Protocol"
-subtitle: "An open-label, randomized, single-dose study to evaluate the pharmacokinetics, safety, and tolerability of CODEA in participants with PATIENTIND compared to healthy participants"
+subtitle: "An open-label, single-dose study to evaluate the pharmacokinetics, safety, and tolerability of CODEA in participants with PATIENTIND compared to healthy participants"
 output:
   officedown::rdocx_document:
     reference_docx: "../word-template.docx"
