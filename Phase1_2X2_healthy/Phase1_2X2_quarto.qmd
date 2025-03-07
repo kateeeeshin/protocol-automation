@@ -419,10 +419,7 @@ flextable(designtable) %>%
 
 </br>
 
-This clinical trial is designed as Phase I, double-blind, randomized, 2X2 crossover study to evaluate the pharmacokinetic (PK) interactions that may occur between `r drug_info$IPcode_A` and `r drug_info$IPcode_B`, following single administration in healthy adult volunteers.
-Screening is conducted within 28 days prior to the first dosing day for all participants , and eligible participants are randomly assigned to one of the `r cohort_info$coh` dosing groups.
-To evaluate PK interactions, blood sampling will be conducted at the following time points: `r pk_info$PK_points`.
-Participants will be randomly assigned to either Sequence A or Sequence B, where they will receive the drugs `r drug_info$IPcode_A` (Test Drug = T) and `r drug_info$IPcode_B` (Comparator Drug = R) in the specified sequence as follows:
+This clinical trial is designed as Phase I, double-blind, randomized, 2X2 crossover study to evaluate the pharmacokinetic (PK) interactions that may occur between `r drug_info$IPcode_A` and `r drug_info$IPcode_B`, following single administration in healthy adult volunteers. Screening is conducted within 28 days prior to the first dosing day for all participants , and eligible participants are randomly assigned to one of the `r cohort_info$coh` dosing groups. To evaluate PK interactions, blood sampling will be conducted at the following time points: `r pk_info$PK_points`. Participants will be randomly assigned to either Sequence A or Sequence B, where they will receive the drugs `r drug_info$IPcode_A` (Test Drug = T) and `r drug_info$IPcode_B` (Comparator Drug = R) in the specified sequence as follows:
 
 </br>
 
@@ -489,21 +486,18 @@ flextable(sequencetable1) %>%
 
 **Number of Period:** 2 Periods (Period 1, Period 2)
 
-**Rationale for Washout Period:** Considering the half-life of IMP (approximately `r pk_info$hlA` hours), it is determined that a period of at least `r geninfo$minwashday` days or more would be necessary for complete elimination of the drugs from the body (i.e., more than 5 times the elimination half-life).
-Taking into account the trial schedule, a `r geninfo$washout_day`-day washout period is established.
+**Rationale for Washout Period:** Considering the half-life of IMP (approximately `r pk_info$hlA` hours), it is determined that a period of at least `r geninfo$minwashday` days or more would be necessary for complete elimination of the drugs from the body (i.e., more than 5 times the elimination half-life). Taking into account the trial schedule, a `r geninfo$washout_day`-day washout period is established.
 
 **Number of Participants:** Approximately `r cohort_info$total_N` participants (`r cohort_info$cohort_N` participants per Sequence group)
 
-**Rationale for Sample Size:** Given the exploratory nature of this trial, it was considered sufficient to describe the statistical power for detecting differences with the predetermined sample size without directly applying the sample size calculation formula for hypothesis testing.
-However, an attempt was made to secure the maximum possible power (80%) based on known scientific evidence.\
-Upon reviewing existing clinical trial data for IMP, it was observed that the inter-individual variability coefficient for the primary PK variable, C~max~, was highest at `r geninfo$coeff_sample`%.
-Since there is insufficient information for intra intra-individual var iability, sample size has been choosen as `r cohort_info$total_N` subjects in order to demonstrate bioequivalence for a 2x2 crossover design.
+**Rationale for Sample Size:** Given the exploratory nature of this trial, it was considered sufficient to describe the statistical power for detecting differences with the predetermined sample size without directly applying the sample size calculation formula for hypothesis testing. However, an attempt was made to secure the maximum possible power (80%) based on known scientific evidence.\
+Upon reviewing existing clinical trial data for IMP, it was observed that the inter-individual variability coefficient for the primary PK variable, C~max~, was highest at `r geninfo$coeff_sample`%. Since there is insufficient information for intra intra-individual var iability, sample size has been choosen as `r cohort_info$total_N` subjects in order to demonstrate bioequivalence for a 2x2 crossover design.
 
 \pagebreak
 
 ## Trial Schema
 
-***[INPUT NEEDED INFO MANUALLY]***
+***\[INPUT NEEDED INFO MANUALLY\]***
 
 \pagebreak
 
@@ -525,7 +519,7 @@ Since there is insufficient information for intra intra-individual var iability,
 
 # BACKGROUND
 
-***[WRITE BACKGROUND MANUALLY]***
+***\[WRITE BACKGROUND MANUALLY\]***
 
 \pagebreak
 
@@ -599,15 +593,11 @@ flextable(sparameter) %>%
 
 ## Description of Trial Design
 
-This clinical trial is an open-label, randomized, 2X2 crossover study to evaluate the pharmacokinetic (PK) characteristics and safety and tolerability after single `r geninfo$admin_route` administration of `r drug_info$IPcode_A` (Test Drug: T) and `r drug_info$IPcode_B` (Comparator Drug: R).
-A total of `r cohort_info$cohortmany` sequence groups will be included, with `r cohort_info$coh_N` participants per sequence, for a total of `r geninfo$total_N` volunteers.
-The clinical trial will consist of a screening period, a treatment period, and a post-study visit.
-During the treatment period, there will be two investigational product administration periods (periods `r geninfo$total_peri`, each lasting `r geninfo$peri_n` days) and `r geninfo$washout_N` washout period (each lasting `r geninfo$washout_day` days).
-Each subject’s participation in the trial is expected to last up to approximately `r geninfo$ct_day` weeks, and the total study duration is anticipated to be `r geninfo$total_month` months from the date of Institutional Review Board (IRB) approval, although the duration may be adjusted based on study progress.
+This clinical trial is an open-label, randomized, 2X2 crossover study to evaluate the pharmacokinetic (PK) characteristics and safety and tolerability after single `r geninfo$admin_route` administration of `r drug_info$IPcode_A` (Test Drug: T) and `r drug_info$IPcode_B` (Comparator Drug: R). A total of `r cohort_info$cohortmany` sequence groups will be included, with `r cohort_info$coh_N` participants per sequence, for a total of `r geninfo$total_N` volunteers. The clinical trial will consist of a screening period, a treatment period, and a post-study visit. During the treatment period, there will be two investigational product administration periods (periods `r geninfo$total_peri`, each lasting `r geninfo$peri_n` days) and `r geninfo$washout_N` washout period (each lasting `r geninfo$washout_day` days). Each subject’s participation in the trial is expected to last up to approximately `r geninfo$ct_day` weeks, and the total study duration is anticipated to be `r geninfo$total_month` months from the date of Institutional Review Board (IRB) approval, although the duration may be adjusted based on study progress.
 
 </br> </br>
 
-[**Trial Design**]
+\[**Trial Design**\]
 
 ```{r}
 col1 <- c(
@@ -671,8 +661,7 @@ flextable(sequencetable2) %>%
 
 This clinical trial employs a crossover design to assess bioequivalence and reduce inter-individual variability.
 
-Considering the half-life of IMP (approximately `r pk_info$hlA` hours), it is determined that a period of at least `r geninfo$minwashday` days or more would be necessary for complete elimination of the drugs from the body (i.e., more than 5 times the elimination half-life).
-Taking into account the trial schedule, a `r geninfo$washout_day`-day washout period is established.
+Considering the half-life of IMP (approximately `r pk_info$hlA` hours), it is determined that a period of at least `r geninfo$minwashday` days or more would be necessary for complete elimination of the drugs from the body (i.e., more than 5 times the elimination half-life). Taking into account the trial schedule, a `r geninfo$washout_day`-day washout period is established.
 
 </br>
 
@@ -684,15 +673,9 @@ Not Applicable.
 
 ## Start of Trial and End of Trial
 
-The trial start date is the date on which the clinical trial will be open for recruitment of participants.
-The first act of recruitment is the first participant screened and will be the trial start date.
+The trial start date is the date on which the clinical trial will be open for recruitment of participants. The first act of recruitment is the first participant screened and will be the trial start date.
 
-A participant is considered to have completed the trial if he or she has completed all phases of the study including the last visit or the last scheduled procedure shown in the Schedule of Activities (SoA), Section 1.3.
-The end of the study is defined as completion of the last visit or procedure shown in the SoA in the trial.
-The Sponsor reserves the right to close the study site or terminate the study at any time for any reason at the sole discretion of Sponsor.
-Trial sites will be closed upon study completion.
-A study site is considered closed when all required documents and study supplies have been collected and a study-site closure visit has been performed.
-For the early site closure or trial termination, please refer to Section 10.5.
+A participant is considered to have completed the trial if he or she has completed all phases of the study including the last visit or the last scheduled procedure shown in the Schedule of Activities (SoA), Section 1.3. The end of the study is defined as completion of the last visit or procedure shown in the SoA in the trial. The Sponsor reserves the right to close the study site or terminate the study at any time for any reason at the sole discretion of Sponsor. Trial sites will be closed upon study completion. A study site is considered closed when all required documents and study supplies have been collected and a study-site closure visit has been performed. For the early site closure or trial termination, please refer to Section 10.5.
 
 \pagebreak
 
@@ -702,18 +685,13 @@ For the early site closure or trial termination, please refer to Section 10.5.
 
 A total of `r geninfo$total_N` healthy adult participants (with `r cohort_info$coh_N` participants per sequence group), aged at least `r geninfo$min_age` years and at most `r geninfo$max_age` years, who are deemed suitable based on screening, will participate in this clinical trial.
 
-The investigator must ensure that all participants being considered for the study meet the eligibility criteria prior to randomization.
-No additional exclusions should be applied by the investigator.
-Participant selection is to be established by checking through all inclusion/exclusion criteria at screening and baseline as stated in the protocol.
-A relevant record (e.g. checklist) must be stored with the source documentation at the study site.
-Deviation from any entry criterion excludes a participant from enrollment into the study.
+The investigator must ensure that all participants being considered for the study meet the eligibility criteria prior to randomization. No additional exclusions should be applied by the investigator. Participant selection is to be established by checking through all inclusion/exclusion criteria at screening and baseline as stated in the protocol. A relevant record (e.g. checklist) must be stored with the source documentation at the study site. Deviation from any entry criterion excludes a participant from enrollment into the study.
 
 </br>
 
 ## Rationale for Trial Population
 
-Healthy volunteers are chosen for this trial to allow for a clear assessment of the IMP's safety and tolerability in an early-phase setting.
-By enrolling individuals with no known comorbidities and normal hepatic and renal function, data regarding potential adverse effects and pharmacokinetics (PKs) are less confounded by underlying conditions or concomitant medications.
+Healthy volunteers are chosen for this trial to allow for a clear assessment of the IMP's safety and tolerability in an early-phase setting. By enrolling individuals with no known comorbidities and normal hepatic and renal function, data regarding potential adverse effects and pharmacokinetics (PKs) are less confounded by underlying conditions or concomitant medications.
 
 </br>
 
@@ -725,7 +703,7 @@ Participants who wish to participate in this clinical trial must meet **ALL** of
 
 2)  Body weight at least 55 kg for males and 50 kg for females, and whose weight falls within ± 20% of the ideal body weight\* at the time of screening
 
-    -   Ideal body weight (kg) = (Height [cm] - 100) x 0.9
+    -   Ideal body weight (kg) = (Height \[cm\] - 100) x 0.9
 
 3)  Individuals without congenital or chronic diseases within the last 5 years and without any pathological symptoms or findings in internal medical examinations
 
@@ -781,8 +759,7 @@ Any subject who meets **ANY** of the following criteria will be excluded from th
 
 13) Individuals with excessive caffeine and alcohol intake, as well as smokers (caffeine: \> 5 cups/day, Alcohol: \> 210 g/week, cigarettes: \> 10 cigarettes/day)
 
-14) Individuals who cannot refrain from consuming caffeine-containing foods (such as coffee, tea [black tea, green tea, etc.], caffeinated soft drinks, coffee-flavored milk, tonic drinks containing caffeine, etc.), or alcohol consumption, or smoking from 9 a.m.
-    on the day of admission to the time of discharge
+14) Individuals who cannot refrain from consuming caffeine-containing foods (such as coffee, tea \[black tea, green tea, etc.\], caffeinated soft drinks, coffee-flavored milk, tonic drinks containing caffeine, etc.), or alcohol consumption, or smoking from 9 a.m. on the day of admission to the time of discharge
 
 15) Individuals who do not agree to use or abstain from the approved contraceptive methods (Refer to APPENDIX 13.1.2) during the study from the date of written consent to `r geninfo$contraception` days after the last administration of the IMP
 
@@ -809,14 +786,13 @@ During the inpatient period, consumption of food other than the meals provided b
 
 ### Lifestyle Restrictions
 
-From admission to discharge, the intake of caffeine-containing foods (coffee, tea [black tea, green tea, etc.], caffeine-containing soft drinks, coffee milk, energy drinks, etc.) and alcohol, as well as smoking, is restricted.
+From admission to discharge, the intake of caffeine-containing foods (coffee, tea \[black tea, green tea, etc.\], caffeine-containing soft drinks, coffee milk, energy drinks, etc.) and alcohol, as well as smoking, is restricted.
 
 </br>
 
 ### Physical Activity Restrictions
 
-1)  On [`r pk_info$mainPKday`], participants will be instructed to maintain an upright position of 45 degrees or more after the administration of the IMP for at least 2 hours.
-    To minimize the impact on the gastrointestinal tract, circulation, and mobility, participants were advised to maintain a posture and behavior similar to that of the dosing period.
+1)  On \[`r pk_info$mainPKday`\], participants will be instructed to maintain an upright position of 45 degrees or more after the administration of the IMP for at least 2 hours. To minimize the impact on the gastrointestinal tract, circulation, and mobility, participants were advised to maintain a posture and behavior similar to that of the dosing period.
 
 2)  Excessive exercise (lasting more than 30 minutes with continuous whole-body movement) will be prohibited throughout the study.
 
@@ -824,22 +800,13 @@ From admission to discharge, the intake of caffeine-containing foods (coffee, te
 
 ### Other Considerations
 
-Given the nature of the IMP(s), the occurrence of `r drug_info$AEspecialinterest` after administration is possible.
-Therefore, participants will be educated by the investigator to immediately notify participating research team if symptoms such as `r drug_info$AESIsymptoms` are observed.
-Additionally, participants will be educated about the very rare but serious adverse event (SAE) of `r  drug_info$SAEspecialinterest` that could occur after administration of `r drug_info$SAESI_drugname`.
-If symptoms of `r drug_info$SAEspecialinterest`, such as `r drug_info$AESIsymptoms`, are observed, participants will be instructed to immediately inform the investigator and/or participating research team.
+Given the nature of the IMP(s), the occurrence of `r drug_info$AEspecialinterest` after administration is possible. Therefore, participants will be educated by the investigator to immediately notify participating research team if symptoms such as `r drug_info$AESIsymptoms` are observed. Additionally, participants will be educated about the very rare but serious adverse event (SAE) of `r  drug_info$SAEspecialinterest` that could occur after administration of `r drug_info$SAESI_drugname`. If symptoms of `r drug_info$SAEspecialinterest`, such as `r drug_info$AESIsymptoms`, are observed, participants will be instructed to immediately inform the investigator and/or participating research team.
 
 </br>
 
 ## Screen Failures
 
-Screen failures are defined as participants who consent to participate in the clinical study but are not subsequently enrolled in the study.
-A minimal set of screen failure information is required to ensure transparent reporting of screen failure participants to meet the Consolidated Standards of Reporting Trials publishing requirements and to respond to queries from regulatory authorities.
-Minimal information includes screen failure details, eligibility criteria, and any SAE.
-Individuals who do not meet the criteria for participation in this study at screening may be rescreened `r geninfo$screen_N` time(s) based on discussion and agreement between the Investigator and the Medical Monitor.
-Re-Screening will be allowed within the recruitment period for the study.
-Re-screened participants should be assigned a new participant number.
-The participant must meet all of the inclusion criteria and none of the exclusion criteria at the time of re-screening in order to enter the study.
+Screen failures are defined as participants who consent to participate in the clinical study but are not subsequently enrolled in the study. A minimal set of screen failure information is required to ensure transparent reporting of screen failure participants to meet the Consolidated Standards of Reporting Trials publishing requirements and to respond to queries from regulatory authorities. Minimal information includes screen failure details, eligibility criteria, and any SAE. Individuals who do not meet the criteria for participation in this study at screening may be rescreened `r geninfo$screen_N` time(s) based on discussion and agreement between the Investigator and the Medical Monitor. Re-Screening will be allowed within the recruitment period for the study. Re-screened participants should be assigned a new participant number. The participant must meet all of the inclusion criteria and none of the exclusion criteria at the time of re-screening in order to enter the study.
 
 \pagebreak
 
@@ -906,13 +873,9 @@ flextable(Bdata) %>%
 
 ## Rationale for Trial Intervention
 
-***[Insert Rationale for Trial Intervention MANUALLY]***
+***\[Insert Rationale for Trial Intervention MANUALLY\]***
 
-ICH M11 Guideline: Provide a rationale for the selection of the dose(s) or dose range, the route of administration, and dosing regimen (including starting dose, dose titration, dose interval) of the trial intervention and any control product.
-This rationale should include relevant results from previous preclinical studies and clinical trials that support selection of the dose and regimen.
-Include any information about age or sex-based PK or pharmacodynamic (PD) differences known from previous trials.
-If applicable, justify any differences in specifications, dose regimen, or therapeutic use relative to approved labelling.
-Include a rationale for prospective dose adjustments incorporated in the trial, if any; for example, as a result of interim analysis.
+ICH M11 Guideline: Provide a rationale for the selection of the dose(s) or dose range, the route of administration, and dosing regimen (including starting dose, dose titration, dose interval) of the trial intervention and any control product. This rationale should include relevant results from previous preclinical studies and clinical trials that support selection of the dose and regimen. Include any information about age or sex-based PK or pharmacodynamic (PD) differences known from previous trials. If applicable, justify any differences in specifications, dose regimen, or therapeutic use relative to approved labelling. Include a rationale for prospective dose adjustments incorporated in the trial, if any; for example, as a result of interim analysis.
 
 </br>
 
@@ -963,10 +926,9 @@ flextable(sequencetable) %>%
 
 <!--OPTIONAL: Input this if oral route: 2)  The IMP(s) are administered by swallowing it whole with 150 mL of water at room temperature. Participants are instructed not to crush, cut, or chew the medication before swallowing. -->
 
-2)  Participants are required to fast for a minimum of 10 hours before the administration of IMP(s) on [`r pk_info$mainPKday`].
+2)  Participants are required to fast for a minimum of 10 hours before the administration of IMP(s) on \[`r pk_info$mainPKday`\].
 
-3)  For [`r pk_info$mainPKday`], water intake is restricted for 1 hour before and after the administration of IMP(s) (except for water intake necessary for the administration of IMP).
-    Participants are to maintain fasting for up to 4 hours after administration.
+3)  For \[`r pk_info$mainPKday`\], water intake is restricted for 1 hour before and after the administration of IMP(s) (except for water intake necessary for the administration of IMP). Participants are to maintain fasting for up to 4 hours after administration.
 
 \pagebreak
 
@@ -974,28 +936,19 @@ flextable(sequencetable) %>%
 
 ### Preparation of Trial Intervention
 
-The Sponsor will supply the IMP to the investigational site.
-The IMP provided for this study was manufactured under current Good Manufacturing Practices and will be suitable for human use.
-The Sponsor is responsible for the preparation and labeling and providing details of batch numbers, safety, and stability data.
-The IMP will be labeled in accordance with local regulatory requirements.
-Procedures relating to IMP preparation and dispensing are outlined in the Pharmacy Manual.
+The Sponsor will supply the IMP to the investigational site. The IMP provided for this study was manufactured under current Good Manufacturing Practices and will be suitable for human use. The Sponsor is responsible for the preparation and labeling and providing details of batch numbers, safety, and stability data. The IMP will be labeled in accordance with local regulatory requirements. Procedures relating to IMP preparation and dispensing are outlined in the Pharmacy Manual.
 
 </br>
 
 ### Handling and Storage of Trial Intervention
 
-Upon receipt, the IMP must be stored at temperature of `r drug_info$IP_storetemp`°C.
-The Investigator or designee will be fully responsible for the security, accessibility, and storage of the IMP while it is at the investigational facility.
-On completion of the study, any surplus IMP supplies will be destroyed upon receipt of written approval from the Sponsor.
-Evidence of the destruction of any surplus IMP will be supplied to the study monitor.
-If no supplies remain, this will be documented in the dispensing record.
+Upon receipt, the IMP must be stored at temperature of `r drug_info$IP_storetemp`°C. The Investigator or designee will be fully responsible for the security, accessibility, and storage of the IMP while it is at the investigational facility. On completion of the study, any surplus IMP supplies will be destroyed upon receipt of written approval from the Sponsor. Evidence of the destruction of any surplus IMP will be supplied to the study monitor. If no supplies remain, this will be documented in the dispensing record.
 
 </br>
 
 ### Accountability of Trial Intervention
 
-A record will be maintained by the investigational site that will account for all dispensing and return of any used and unused IMP.
-At the end of the study, the IMP will be reconciled, and a copy of the record given to the study monitor.
+A record will be maintained by the investigational site that will account for all dispensing and return of any used and unused IMP. At the end of the study, the IMP will be reconciled, and a copy of the record given to the study monitor.
 
 </br>
 
@@ -1003,28 +956,19 @@ At the end of the study, the IMP will be reconciled, and a copy of the record gi
 
 ### Participant Assignment
 
-Each participant screened is assigned a unique participant number.
-The screening number is a combination of a ***[Input code MANUALLY]*** digit center number, which is provided by `r geninfo$CROname`, and a ***[Input code MANUALLY]*** digit sequential number allocated by the investigator, starting with ***[Input code MANUALLY]***1.
-Therefore, if the center number is 1001, the participant numbers will be assigned such as 1001001, 1001002, etc. in ascending order.
-If the center number is 1002, the participant numbers will be assigned such as 1002001, 1002002, etc.
-Participants can be re-screened and should be assigned a new participant number.
+Each participant screened is assigned a unique participant number. The screening number is a combination of a ***\[Input code MANUALLY\]*** digit center number, which is provided by `r geninfo$CROname`, and a ***\[Input code MANUALLY\]*** digit sequential number allocated by the investigator, starting with ***\[Input code MANUALLY\]***1. Therefore, if the center number is 1001, the participant numbers will be assigned such as 1001001, 1001002, etc. in ascending order. If the center number is 1002, the participant numbers will be assigned such as 1002001, 1002002, etc. Participants can be re-screened and should be assigned a new participant number.
 
 </br>
 
 ### Randomization
 
-`r geninfo$CROname` will manage the randomization of eligible study participants.
-A randomization list will be prepared using a statistical software package, `r geninfo$random_software` by a biostatistician.
-Each participant will be provided with a unique Screening number post-documentation of informed consent.
-Once deemed eligible for enrollment in the study, the participant will be assigned a sequential randomization number prior to first dosing.
-Participants who withdraw from the study, for any reason, without completing all necessary screening and baseline assessments will be considered screen failures (see Section 5.6).
+`r geninfo$CROname` will manage the randomization of eligible study participants. A randomization list will be prepared using a statistical software package, `r geninfo$random_software` by a biostatistician. Each participant will be provided with a unique Screening number post-documentation of informed consent. Once deemed eligible for enrollment in the study, the participant will be assigned a sequential randomization number prior to first dosing. Participants who withdraw from the study, for any reason, without completing all necessary screening and baseline assessments will be considered screen failures (see Section 5.6).
 
 </br>
 
 ### Blinding and Unblinding
 
-Not Applicable.
-<!-- OPTIONAL: in case of 'Blinded-trial', use this sentence below
+Not Applicable. <!-- OPTIONAL: in case of 'Blinded-trial', use this sentence below
 The Sponsor, Investigator, Medical Monitor, study personnel, and participants are not to make any effort to determine which IMP therapy is being received. 
 Only in the case of an emergency, when knowledge of the IMP is essential for the clinical management or welfare of a specific participant, the Investigator may unblind a participant’s treatment assignment. However, prior to any unblinding, the Investigator is strongly advised to discuss options with the Medical Monitor, Sponsor, or appropriate study personnel. The Investigator will record in source documentation the date and reason for revealing the blinded treatment assignment for that participant and the names and roles of personnel unblinded.
 As soon as possible, and without revealing the participant’s study treatment assignment (unless important to the safety of participants remaining in the study), the Investigator must notify the Sponsor if the blind is broken for any reason and the Investigator was unable to contact the Sponsor prior to unblinding.
@@ -1061,12 +1005,7 @@ The Sponsor should be contacted if there are any questions regarding concomitant
 
 ## Discontinuation of Trial Intervention
 
-A participant may withdraw from the study at any time at his/her own request or may be withdrawn at any time at the discretion of the Investigator for safety, behavioral, compliance, or administrative reasons.
-If a participant discontinues treatment from the study, the Investigator will attempt to perform (if the participant agrees) assessments specified for the F/U Visit, or if not possible, a follow-up phone call to be conducted 4 weeks after the last dose of IMP has been administered (Section 1.3).
-Attempts should also be made to follow all participants for safety for a total of 4 weeks from the day the last dose of IMP is administered.
-The Sponsor and site monitor will be notified as soon as possible.
-If a participant is withdrawn from the study or withdraws consent, no further data will be collected.
-Participants who withdraw from the study will not be replaced.
+A participant may withdraw from the study at any time at his/her own request or may be withdrawn at any time at the discretion of the Investigator for safety, behavioral, compliance, or administrative reasons. If a participant discontinues treatment from the study, the Investigator will attempt to perform (if the participant agrees) assessments specified for the F/U Visit, or if not possible, a follow-up phone call to be conducted 4 weeks after the last dose of IMP has been administered (Section 1.3). Attempts should also be made to follow all participants for safety for a total of 4 weeks from the day the last dose of IMP is administered. The Sponsor and site monitor will be notified as soon as possible. If a participant is withdrawn from the study or withdraws consent, no further data will be collected. Participants who withdraw from the study will not be replaced.
 
 Participants should be discontinued from study intervention if any of the following occur during the study:
 
@@ -1094,23 +1033,17 @@ Participants may be discontinued from study intervention under the following cir
 
 </br>
 
-The Investigator should contact the Medical Monitor prior to discontinuing a participant from study intervention.
-If a participant discontinues from treatment, the participant should be encouraged to return for the F/U Visit (Section 1.3) 4 weeks after the participant’s last dose of study intervention.
-The reason for the treatment discontinuation (i.e., participant withdraws consent, participant withdrawal from procedures, physician decision, AE, or other reason specified in eCRF) will be recorded in the eCRF.
-If the participant withdraws consent for disclosure of future information, the Sponsor may retain and continue to use all data collected before such a withdrawal of consent.
-If a participant withdraws from the study, the participant may request destruction of any samples taken and not tested, and the Investigator must document this in the site study records as well as inform the site monitor and Sponsor.
+The Investigator should contact the Medical Monitor prior to discontinuing a participant from study intervention. If a participant discontinues from treatment, the participant should be encouraged to return for the F/U Visit (Section 1.3) 4 weeks after the participant’s last dose of study intervention. The reason for the treatment discontinuation (i.e., participant withdraws consent, participant withdrawal from procedures, physician decision, AE, or other reason specified in eCRF) will be recorded in the eCRF. If the participant withdraws consent for disclosure of future information, the Sponsor may retain and continue to use all data collected before such a withdrawal of consent. If a participant withdraws from the study, the participant may request destruction of any samples taken and not tested, and the Investigator must document this in the site study records as well as inform the site monitor and Sponsor.
 
 </br>
 
 ## Lost to Follow-Up
 
-A participant will be considered lost to follow-up if the participant repeatedly fails to return for scheduled visits and is unable to be contacted by the study site.
-The following actions must be taken if a participant fails to return to the clinic for a required study visit:
+A participant will be considered lost to follow-up if the participant repeatedly fails to return for scheduled visits and is unable to be contacted by the study site. The following actions must be taken if a participant fails to return to the clinic for a required study visit:
 
 1.  The site must attempt to contact the participant and reschedule the missed visit as soon as possible and counsel the participant on the importance of maintaining the assigned visit schedule and ascertain whether or not the participant wishes to and/or should continue in the study.
 
-2.  Before a participant is deemed lost to follow up, the Investigator or designee must make every effort to regain contact with the participant (where possible, 3 telephone calls and, if necessary, a certified letter to the participant’s last known mailing address or local equivalent methods).
-    These contact attempts should be documented in the participant’s medical record.
+2.  Before a participant is deemed lost to follow up, the Investigator or designee must make every effort to regain contact with the participant (where possible, 3 telephone calls and, if necessary, a certified letter to the participant’s last known mailing address or local equivalent methods). These contact attempts should be documented in the participant’s medical record.
 
 3.  Should the participant continue to be unreachable, the participant will be considered to have withdrawn consent and future missed visits will not be considered protocol deviations.
 
@@ -1120,16 +1053,11 @@ The following actions must be taken if a participant fails to return to the clin
 
 The study will be completed as planned unless:
 
--   New information or other evaluation regarding the safety of the study medication indicates a change in the known risk/benefit profile for the compound, such that the risk/benefit is no longer acceptable for subjects participating in the study.
-    This may be determined by the Sponsor, the Investigator, the ethics committee or regulatory authorities.
+-   New information or other evaluation regarding the safety of the study medication indicates a change in the known risk/benefit profile for the compound, such that the risk/benefit is no longer acceptable for subjects participating in the study. This may be determined by the Sponsor, the Investigator, the ethics committee or regulatory authorities.
 
 -   The study is terminated by the Sponsor for administrative reasons.
 
-The Sponsor, Investigator, and the ethics committee reserve the right to terminate or suspend the study at any time; however, this should be discussed between the relevant parties beforehand and the reason for such decision recorded.
-Should this occur, all data available will also be recorded in the eCRFs.
-If the Sponsor, the ethics committee, or regulatory authority elects to terminate or suspend the study or the participation of the investigational site, a study-specific procedure for ET or suspension will be provided by the Sponsor.
-The procedure will be followed by the investigational site during termination or study suspension.
-The Investigator should notify the relevant ethics committee in writing of the study’s completion or early discontinuation.
+The Sponsor, Investigator, and the ethics committee reserve the right to terminate or suspend the study at any time; however, this should be discussed between the relevant parties beforehand and the reason for such decision recorded. Should this occur, all data available will also be recorded in the eCRFs. If the Sponsor, the ethics committee, or regulatory authority elects to terminate or suspend the study or the participation of the investigational site, a study-specific procedure for ET or suspension will be provided by the Sponsor. The procedure will be followed by the investigational site during termination or study suspension. The Investigator should notify the relevant ethics committee in writing of the study’s completion or early discontinuation.
 
 \pagebreak
 
@@ -1137,9 +1065,7 @@ The Investigator should notify the relevant ethics committee in writing of the s
 
 ## Screening/Baseline Assessments and Procedures
 
-Participants will be screened from -28D to -1D to confirm that they meet the eligibility criteria for the study.
-The investigator (or an appropriate delegate at the study site) will obtain informed consent from each participant before performing any study-specific procedures in accordance with the procedures described in the Schedule of Activities (SoA).
-For all participants, prior to any study procedure the informed consent will be obtained at the Screening visit.
+Participants will be screened from -28D to -1D to confirm that they meet the eligibility criteria for the study. The investigator (or an appropriate delegate at the study site) will obtain informed consent from each participant before performing any study-specific procedures in accordance with the procedures described in the Schedule of Activities (SoA). For all participants, prior to any study procedure the informed consent will be obtained at the Screening visit.
 
 For Screening procedures, see the SoA (Section 1.3).
 
@@ -1159,23 +1085,19 @@ Medical history (including alcohol and smoking status), date of birth, age (calc
 
 ### Weight and Height
 
-Body height (centimeters) and body weight (kilograms) will be measured at the time points delineated in the SoA (Section 1.3) and will be used to calculate BMI.
-BMI is calculated by dividing the subject’s body weight in kilograms by the subject’s height in meters squared (kg/m^2^).
+Body height (centimeters) and body weight (kilograms) will be measured at the time points delineated in the SoA (Section 1.3) and will be used to calculate BMI. BMI is calculated by dividing the subject’s body weight in kilograms by the subject’s height in meters squared (kg/m^2^).
 
 </br>
 
 ### Physical Examination
 
-A physical examination will include assessments of the following body systems: general appearance; skin; head, ear, eye, nose, throat; neck; lymph node; chest; heart; abdominal cavity; limb; central nervous system; and musculoskeletal.
-An abbreviated physical examination consists of a body-system relevant examination based upon Investigator judgment and participant symptoms.
-For consistency, all efforts should be made to have the physical examination performed by the same qualified study staff.
+A physical examination will include assessments of the following body systems: general appearance; skin; head, ear, eye, nose, throat; neck; lymph node; chest; heart; abdominal cavity; limb; central nervous system; and musculoskeletal. An abbreviated physical examination consists of a body-system relevant examination based upon Investigator judgment and participant symptoms. For consistency, all efforts should be made to have the physical examination performed by the same qualified study staff.
 
 </br>
 
 ### Vital Signs
 
-Vital signs (systolic and diastolic blood pressure, heart rate, body temperature, and respiratory rate) will be measured at the time points specified in the SoA (Section 1.3) with participants resting for at least 5 minutes in a supine position.
-When the time of vital signs measurement coincides with a blood draw, the vital signs will be taken before the scheduled blood draw where possible, ensuring the blood draw is within the window specified in the protocol.
+Vital signs (systolic and diastolic blood pressure, heart rate, body temperature, and respiratory rate) will be measured at the time points specified in the SoA (Section 1.3) with participants resting for at least 5 minutes in a supine position. When the time of vital signs measurement coincides with a blood draw, the vital signs will be taken before the scheduled blood draw where possible, ensuring the blood draw is within the window specified in the protocol.
 
 Additional vital signs may be performed at other times if deemed necessary.
 
@@ -1183,19 +1105,13 @@ Additional vital signs may be performed at other times if deemed necessary.
 
 ### Electrocardiograms
 
-A 12-lead ECG will be taken at the time points delineated in the SoA (Section 1.3).
-Additional ECG monitoring may be performed at other times if deemed necessary.
-ECGs will be performed prior to vital signs with participants in a supine position.
-Participants must be in this position for at least 5 minutes before the reading is taken.
-All ECG tracings will be reviewed by the Investigator or designee.
-When the time of ECG monitoring coincides with a blood draw, the ECG will be taken before the scheduled blood draw while ensuring the blood draw is within the window specified in the protocol.
+A 12-lead ECG will be taken at the time points delineated in the SoA (Section 1.3). Additional ECG monitoring may be performed at other times if deemed necessary. ECGs will be performed prior to vital signs with participants in a supine position. Participants must be in this position for at least 5 minutes before the reading is taken. All ECG tracings will be reviewed by the Investigator or designee. When the time of ECG monitoring coincides with a blood draw, the ECG will be taken before the scheduled blood draw while ensuring the blood draw is within the window specified in the protocol.
 
 </br>
 
 ### Clinical Laboratory Assessments
 
-Safety laboratory tests (hematology, biochemistry, coagulation, and urinalysis) as listed in the table below will be performed following an overnight fast at the time points specified in the SoA (Section 1.3).
-Additional clinical laboratory tests may be performed at other times if deemed necessary based on the participant’s clinical condition.
+Safety laboratory tests (hematology, biochemistry, coagulation, and urinalysis) as listed in the table below will be performed following an overnight fast at the time points specified in the SoA (Section 1.3). Additional clinical laboratory tests may be performed at other times if deemed necessary based on the participant’s clinical condition.
 
 Laboratory tests to be tested are listed in APPENDIX 13.2.
 
@@ -1217,8 +1133,7 @@ Adverse events (AEs) may arise from symptoms or other complaints reported to the
 
 The investigator and any qualified designees are responsible for detecting, documenting, and recording events that meet the definition of an AE or SAE and remain responsible to pursue and obtain adequate information both to determine the outcome and to assess whether the event meets the criteria for classification as an SAE or caused the participant to discontinue the study intervention (see Section 7.1).
 
-During the active collection period as described in Section 8.3.2, each participant will be questioned about the occurrence of AEs in a non-leading manner.
-In addition, the investigator may be requested by `r geninfo$sponsor_name` to obtain specific follow-up information in an expedited fashion.
+During the active collection period as described in Section 8.3.2, each participant will be questioned about the occurrence of AEs in a non-leading manner. In addition, the investigator may be requested by `r geninfo$sponsor_name` to obtain specific follow-up information in an expedited fashion.
 
 The method of recording, evaluating, and assessing causality of AEs and SAEs and the procedures for completing and transmitting SAE reports are provided in Appendices 12.3 \~ 12.4.
 
@@ -1228,11 +1143,9 @@ The method of recording, evaluating, and assessing causality of AEs and SAEs and
 
 All AEs will be collected from the signing of the informed consent form (ICF) until 4 weeks after the last dose of IMP is administered.
 
-Medical occurrences that begin before the start of IMP but after obtaining informed consent must be recorded in the AE eCRF as AEs and not in the Medical History/Current Medical Conditions eCRF. All SAEs will be recorded and reported to the Sponsor or designee within 24 hours.
-The investigator will submit any updated SAE data to the Sponsor within 24 hours of awareness.
+Medical occurrences that begin before the start of IMP but after obtaining informed consent must be recorded in the AE eCRF as AEs and not in the Medical History/Current Medical Conditions eCRF. All SAEs will be recorded and reported to the Sponsor or designee within 24 hours. The investigator will submit any updated SAE data to the Sponsor within 24 hours of awareness.
 
-Investigators are not obligated to actively seek AEs or SAEs after the conclusion of study participation.
-However, if the Investigator learns of any SAE, including a death, at any time after a participant has been discharged from the study, regardless of whether or not the event is related to the IMP, the Investigator must promptly notify the Sponsor.
+Investigators are not obligated to actively seek AEs or SAEs after the conclusion of study participation. However, if the Investigator learns of any SAE, including a death, at any time after a participant has been discharged from the study, regardless of whether or not the event is related to the IMP, the Investigator must promptly notify the Sponsor.
 
 The method of recording, evaluating, and assessing causality of AE and SAE and the procedures for completing and transmitting SAE reports are provided in Section 8.3.4.
 
@@ -1240,11 +1153,9 @@ The method of recording, evaluating, and assessing causality of AE and SAE and t
 
 ### Identifying AEs and SAEs
 
-The occurrence of adverse events should be sought by non-directive questioning of the participant at each visit during the study.
-Adverse events also may be detected when they are volunteered by the participant during or between visits or through physical examination, laboratory test, or other assessments.
+The occurrence of adverse events should be sought by non-directive questioning of the participant at each visit during the study. Adverse events also may be detected when they are volunteered by the participant during or between visits or through physical examination, laboratory test, or other assessments.
 
-Clinically significant abnormal laboratory values or test results should be identified through a review of values outside of normal ranges/clinically notable ranges, significant changes from baseline or the previous visit, or values which are considered to be non-typical in participants with underlying disease.
-Investigators have the responsibility for managing the safety of individual participant and identifying adverse events.
+Clinically significant abnormal laboratory values or test results should be identified through a review of values outside of normal ranges/clinically notable ranges, significant changes from baseline or the previous visit, or values which are considered to be non-typical in participants with underlying disease. Investigators have the responsibility for managing the safety of individual participant and identifying adverse events.
 
 </br>
 
@@ -1252,37 +1163,27 @@ Investigators have the responsibility for managing the safety of individual part
 
 Adverse events spontaneously reported by the participant and/or in response to an open question from the study personnel or revealed by observation will be recorded in accordance with the Investigator’s normal clinical practice and on the AE page of the eCRF during the study at the investigational site.
 
-However, abnormal values that constitute an SAE or lead to discontinuation of administration of IMP must be reported and recorded as an AE.
-The AE term should be reported in standard medical terminology when possible.
-For each AE, the Investigator will evaluate and report the onset (date and time), resolution (date and time), intensity, causality, action taken, serious outcome (if applicable), and whether or not it caused the participant to discontinue the study.
-AEs that occur during the study must be documented in the participant’s medical record, on the AE eCRF and on the SAE report form.
-If an SAE report is completed, pertinent laboratory data should be recorded on the SAE form, preferably with baseline values and copies of laboratory reports.
+However, abnormal values that constitute an SAE or lead to discontinuation of administration of IMP must be reported and recorded as an AE. The AE term should be reported in standard medical terminology when possible. For each AE, the Investigator will evaluate and report the onset (date and time), resolution (date and time), intensity, causality, action taken, serious outcome (if applicable), and whether or not it caused the participant to discontinue the study. AEs that occur during the study must be documented in the participant’s medical record, on the AE eCRF and on the SAE report form. If an SAE report is completed, pertinent laboratory data should be recorded on the SAE form, preferably with baseline values and copies of laboratory reports.
 
-In addition, if the abnormal assessment meets the criteria for being serious, the SAE form must also be completed.
-A diagnosis, if known, or clinical signs or symptoms if the diagnosis is unknown, rather than the clinically significant laboratory finding or abnormal assessment, should be used to complete the AE/SAE page.
-If no diagnosis is known and clinical signs or symptoms are not present, then the abnormal finding should be recorded.
+In addition, if the abnormal assessment meets the criteria for being serious, the SAE form must also be completed. A diagnosis, if known, or clinical signs or symptoms if the diagnosis is unknown, rather than the clinically significant laboratory finding or abnormal assessment, should be used to complete the AE/SAE page. If no diagnosis is known and clinical signs or symptoms are not present, then the abnormal finding should be recorded.
 
 </br>
 
 ### Follow-up of AEs and SAEs
 
-All AEs and SAEs that are deemed related, possibly related, or probably related to the IMP must be followed until resolution, until the condition stabilizes, until the event is otherwise explained, or until the participant dies or is lost to follow-up.
-The Investigator is responsible for ensuring that follow-up includes any supplemental investigations as may be indicated to elucidate as completely as practical the nature and/or causality of the AE/SAE.
-This may include additional laboratory tests or investigations or consultation with other health care professionals.
+All AEs and SAEs that are deemed related, possibly related, or probably related to the IMP must be followed until resolution, until the condition stabilizes, until the event is otherwise explained, or until the participant dies or is lost to follow-up. The Investigator is responsible for ensuring that follow-up includes any supplemental investigations as may be indicated to elucidate as completely as practical the nature and/or causality of the AE/SAE. This may include additional laboratory tests or investigations or consultation with other health care professionals.
 
-The Sponsor may request that the Investigator perform or arrange for the conduct of supplemental measurements and/or evaluations.
-If a participant dies during participation in the study or during a recognized follow-up period, the Sponsor should be provided with a copy of any post-mortem findings, including histopathology.
+The Sponsor may request that the Investigator perform or arrange for the conduct of supplemental measurements and/or evaluations. If a participant dies during participation in the study or during a recognized follow-up period, the Sponsor should be provided with a copy of any post-mortem findings, including histopathology.
 
 </br>
 
 ### Reporting of SAEs
 
-All SAEs, regardless of relationship to the IMP, during the period starting from the time the participant signed the ICF through to the End of Study (EOS) will be recorded in the eCRF.
-Once the Investigator becomes aware of an SAE, they must report the SAE to the designated `r geninfo$sponsor_name` representative **within 24 hours** of knowledge of the event.
+All SAEs, regardless of relationship to the IMP, during the period starting from the time the participant signed the ICF through to the End of Study (EOS) will be recorded in the eCRF. Once the Investigator becomes aware of an SAE, they must report the SAE to the designated `r geninfo$sponsor_name` representative **within 24 hours** of knowledge of the event.
 
 The SAE information will be sent by the investigative site via secure email connection to:
 
-**[`r geninfo$sponsor_email`]**
+**\[`r geninfo$sponsor_email`\]**
 
 If requested, supporting de-identified source documents (eg, hospital discharge summary, autopsy report when available, results of relevant diagnostic tests completed to evaluate the event) will also be sent to the designated `r geninfo$sponsor_name` representative.
 
@@ -1304,10 +1205,7 @@ A written SAE report must include a full description of the event including the 
 
 -   Outcome of event and end date
 
-The Sponsor is responsible for notifying the relevant regulatory authorities of certain events.
-It is the Investigator’s responsibility to notify the IRB of all SAEs in accordance with the IRB SAE reporting policy.
-The Investigator will also be notified of all unexpected, serious, drug-related events that occur during the clinical trial.
-The Investigator is responsible for notifying the IRB of these additional SAEs.
+The Sponsor is responsible for notifying the relevant regulatory authorities of certain events. It is the Investigator’s responsibility to notify the IRB of all SAEs in accordance with the IRB SAE reporting policy. The Investigator will also be notified of all unexpected, serious, drug-related events that occur during the clinical trial. The Investigator is responsible for notifying the IRB of these additional SAEs.
 
 </br>
 
@@ -1315,8 +1213,7 @@ The Investigator is responsible for notifying the IRB of these additional SAEs.
 
 -   The Investigator must notify the Sponsor of an SAE within 24 hours of the first awareness of the event.
 
--   The Council for International Organizations of Medical Sciences (CIOMS) or MedWatch reports must be prepared for suspected unexpected serious adverse reactions (SUSARs) (Section 12.2) according to local regulatory requirements and Sponsor policy and forwarded to Investigators as necessary.
-    `r geninfo$sponsor_name` procedures for the reporting of SUSARs are in accordance with United States Title 21 Code of Federal Regulations (CFR) 312.32 and European Union Clinical Trial Directive 2001/20/EC and the associated detailed guidance documents or national regulatory requirements in participating countries, as well as IRBs/IECs where applicable.
+-   The Council for International Organizations of Medical Sciences (CIOMS) or MedWatch reports must be prepared for suspected unexpected serious adverse reactions (SUSARs) (Section 12.2) according to local regulatory requirements and Sponsor policy and forwarded to Investigators as necessary. `r geninfo$sponsor_name` procedures for the reporting of SUSARs are in accordance with United States Title 21 Code of Federal Regulations (CFR) 312.32 and European Union Clinical Trial Directive 2001/20/EC and the associated detailed guidance documents or national regulatory requirements in participating countries, as well as IRBs/IECs where applicable.
 
 -   An Investigator who receives an Investigator safety report describing an SAE or other specific safety information (e.g., summary or listing of SAEs) from the Sponsor will review and acknowledge the report and notify the IRB/IEC, if appropriate, according to local requirements.
 
@@ -1324,7 +1221,7 @@ The Investigator is responsible for notifying the IRB of these additional SAEs.
 
 ### Adverse Events of Special Interest
 
-*Include content in this section if applicable, otherwise note as [**Not Applicable**].*
+*Include content in this section if applicable, otherwise note as \[**Not Applicable**\].*
 
 *Describe any other events that merit reporting to the sponsor, study leadership, IRB, and regulatory agencies. For example, in oncology trials, secondary malignancies are often captured.*\
 *Include any other reportable events not already included in the previous sections, such as cardiovascular and death events, medical device incidents (including malfunctions), laboratory test abnormalities, and study intervention overdose.*
@@ -1335,29 +1232,21 @@ The Investigator is responsible for notifying the IRB of these additional SAEs.
 
 ### Participants Who Become Pregnant During the Trial
 
-If a participant becomes pregnant during the study, study treatment should be discontinued immediately.
-Pregnancy itself is not regarded as an AE unless there is a suspicion that the study treatment may have interfered with the effectiveness of a contraceptive medication.
-Congenital anomalies/birth defects and spontaneous miscarriages should be reported and handled as SAEs.
-Elective abortions without complications should not be handled as AEs.
-The outcome of all pregnancies (spontaneous miscarriage, elective termination, ectopic pregnancy, normal birth, or congenital anomaly/birth defect) should be followed up and documented even if the participant is discontinued from the study.
+If a participant becomes pregnant during the study, study treatment should be discontinued immediately. Pregnancy itself is not regarded as an AE unless there is a suspicion that the study treatment may have interfered with the effectiveness of a contraceptive medication. Congenital anomalies/birth defects and spontaneous miscarriages should be reported and handled as SAEs. Elective abortions without complications should not be handled as AEs. The outcome of all pregnancies (spontaneous miscarriage, elective termination, ectopic pregnancy, normal birth, or congenital anomaly/birth defect) should be followed up and documented even if the participant is discontinued from the study.
 
 If any pregnancy occurs during the study, the investigator or other site personnel should inform the appropriate `r geninfo$sponsor_name` representatives immediately but no later than 24 hours after they become aware of it.
 
-The designated `r geninfo$sponsor_name` representative works with the investigator to ensure that all relevant information is provided to the `r geninfo$sponsor_name` within ***[ADD DAYS MANUALLY ACCORDING TO SPONSOR'S GUIDELINE]*** calendar days for SAEs (see Section 8.3.6) and within ***[ADD DAYS MANUALLY ACCORDING TO SPONSOR'S GUIDELINE]*** days for all other pregnancies.
+The designated `r geninfo$sponsor_name` representative works with the investigator to ensure that all relevant information is provided to the `r geninfo$sponsor_name` within ***\[ADD DAYS MANUALLY ACCORDING TO SPONSOR'S GUIDELINE\]*** calendar days for SAEs (see Section 8.3.6) and within ***\[ADD DAYS MANUALLY ACCORDING TO SPONSOR'S GUIDELINE\]*** days for all other pregnancies.
 
-The same timelines apply when outcome information is available.
-More details on contraception and pregnancy can be found in APPENDIX 13.1.
+The same timelines apply when outcome information is available. More details on contraception and pregnancy can be found in APPENDIX 13.1.
 
 </br>
 
 ### Participants Whose Partners Become Pregnant
 
-Non-sterilized male participants who intend to be sexually active with a female partner of childbearing potential should refrain from fathering a child or donating or banking sperm for the duration of the study (from the time of screening) and for `r geninfo$contraception` days after the last dose of the IMP(s).Pregnancy of the patient’s partner is not considered to be an AE.
-However, the outcome of all pregnancies (spontaneous miscarriage, elective termination, ectopic pregnancy, normal birth, or congenital anomaly) occurring from the date of the first dose of study treatment until 15 months after the last dose of study treatment should be followed up and documented in the medical record and provided to the `r geninfo$sponsor_name`.
-Consent from the partner must be obtained before the information is collected and reported to `r geninfo$sponsor_name`.
+Non-sterilized male participants who intend to be sexually active with a female partner of childbearing potential should refrain from fathering a child or donating or banking sperm for the duration of the study (from the time of screening) and for `r geninfo$contraception` days after the last dose of the IMP(s).Pregnancy of the patient’s partner is not considered to be an AE. However, the outcome of all pregnancies (spontaneous miscarriage, elective termination, ectopic pregnancy, normal birth, or congenital anomaly) occurring from the date of the first dose of study treatment until 15 months after the last dose of study treatment should be followed up and documented in the medical record and provided to the `r geninfo$sponsor_name`. Consent from the partner must be obtained before the information is collected and reported to `r geninfo$sponsor_name`.
 
-Where a report of pregnancy is received, prior to obtaining information about the pregnancy, the investigator must obtain the consent of the participant’s partner.
-The study team should adopt the Pregnant Partner Form in line with local procedures/requirements and submit it to the relevant Regulatory Authority/Institutional Review Boards (IRBs)/Independent Ethics Committees (IECs) prior to use.
+Where a report of pregnancy is received, prior to obtaining information about the pregnancy, the investigator must obtain the consent of the participant’s partner. The study team should adopt the Pregnant Partner Form in line with local procedures/requirements and submit it to the relevant Regulatory Authority/Institutional Review Boards (IRBs)/Independent Ethics Committees (IECs) prior to use.
 
 </br>
 
@@ -1369,14 +1258,11 @@ Samples will be collected at `r pk_info$PK_points` and may be collected at addit
 
 The actual date and time of each blood sample collection will be recorded.
 
-Samples will be collected, labelled, stored, and shipped as detailed in the Laboratory Manual.
-Samples will be stored for a maximum of `r pk_info$pkstore_year` months from the last patient last visit in line with consent and local requirements, after which they will be destroyed/repatriated.
-Samples collected in different region will be stored and disposed of according to local laws and regulations.
+Samples will be collected, labelled, stored, and shipped as detailed in the Laboratory Manual. Samples will be stored for a maximum of `r pk_info$pkstore_year` months from the last patient last visit in line with consent and local requirements, after which they will be destroyed/repatriated. Samples collected in different region will be stored and disposed of according to local laws and regulations.
 
 **Total Volume of Blood Collection**:
 
-The total number of venipunctures and total volume of whole blood collected during the study will be limited to that needed for safety monitoring and PK assessment.
-Total whole blood volume collected over the study duration is not to exceed approximately `r pk_info$total_bloodvolume` mL for each participant.
+The total number of venipunctures and total volume of whole blood collected during the study will be limited to that needed for safety monitoring and PK assessment. Total whole blood volume collected over the study duration is not to exceed approximately `r pk_info$total_bloodvolume` mL for each participant.
 
 </br>
 
@@ -1426,8 +1312,7 @@ Include any specific instructions for the collection of samples and interpretati
 
 # STATISTICAL CONSIDERATIONS
 
-Detailed methodology for statistical analyses of the data collected in this study are outlined here and further detailed in the SAP, which will be maintained by the Sponsor.
-The SAP may modify what is outlined in the protocol where appropriate; however, any major modifications of the primary endpoint definitions or their analyses will also be reflected in a protocol amendment.
+Detailed methodology for statistical analyses of the data collected in this study are outlined here and further detailed in the SAP, which will be maintained by the Sponsor. The SAP may modify what is outlined in the protocol where appropriate; however, any major modifications of the primary endpoint definitions or their analyses will also be reflected in a protocol amendment.
 
 </br>
 
@@ -1435,28 +1320,21 @@ The SAP may modify what is outlined in the protocol where appropriate; however, 
 
 ### Pharmacokinetic Set (PS)
 
-All participants who receive any amount of active IMP(s) and have sufficiently evaluable `r pk_info$serum_plasma` concentration-time profile to allow determination of at least one PK parameter among *C~max~*, *AUC~last~*, *AUC~inf~*, *T~max~*, *t~1/2~*, *CL*, and *Vd* will be included in the PK Set.
-An evaluable PK profile will be determined at the discretion of the PK analyst following examination of participants with dosing or protocol deviations that could potentially affect the PK profile.
+All participants who receive any amount of active IMP(s) and have sufficiently evaluable `r pk_info$serum_plasma` concentration-time profile to allow determination of at least one PK parameter among *C~max~*, *AUC~last~*, *AUC~inf~*, *T~max~*, *t~1/2~*, *CL*, and *Vd* will be included in the PK Set. An evaluable PK profile will be determined at the discretion of the PK analyst following examination of participants with dosing or protocol deviations that could potentially affect the PK profile.
 
-The PK analyses (`r pk_info$serum_plasma`) will be conducted based on the PK Set.
-The PK population will be used for the summaries and all graphical presentation of all PK data.
-The PK Population determination will be made post database lock.
+The PK analyses (`r pk_info$serum_plasma`) will be conducted based on the PK Set. The PK population will be used for the summaries and all graphical presentation of all PK data. The PK Population determination will be made post database lock.
 
 </br>
 
 ### Safety Set (SS)
 
-All participants who receive any amount of IMP(s) will be included in the Safety Analysis Set.
-The Safety Analysis Set will be used for the summaries of all safety assessments.
-Participants will be analyzed according to treatment received.
+All participants who receive any amount of IMP(s) will be included in the Safety Analysis Set. The Safety Analysis Set will be used for the summaries of all safety assessments. Participants will be analyzed according to treatment received.
 
 </br>
 
 ## Demographic Set (DS)
 
-Demographic information will be analyzed using the Demographics Set (DS).
-The DS includes all study participants who have been assigned a subject identification number.
-The participant’s age, sex, weight, height, BMI, race, and other demographic characteristics will be recorded and summarized using descriptive statistics.
+Demographic information will be analyzed using the Demographics Set (DS). The DS includes all study participants who have been assigned a subject identification number. The participant’s age, sex, weight, height, BMI, race, and other demographic characteristics will be recorded and summarized using descriptive statistics.
 
 </br>
 
@@ -1464,9 +1342,7 @@ The participant’s age, sex, weight, height, BMI, race, and other demographic c
 
 ### Statistical Model, Hypothesis, and Method of Analysis
 
-Statistical analysis will be performed as a valid case analysis including all participants in which no major protocol deviations occurred and all target variables are available for measurement.
-If a participant is to be excluded from evaluation, this decision has to be justified in the Clinical Study Report.
-Statistical analysis will be performed by means of the program `r pk_info$NCA_program` or above.
+Statistical analysis will be performed as a valid case analysis including all participants in which no major protocol deviations occurred and all target variables are available for measurement. If a participant is to be excluded from evaluation, this decision has to be justified in the Clinical Study Report. Statistical analysis will be performed by means of the program `r pk_info$NCA_program` or above.
 
 1)  Analysis Method:
 
@@ -1490,13 +1366,7 @@ Statistical analysis will be performed by means of the program `r pk_info$NCA_pr
 
 2)  Comparative Pharmacokinetic Evaluation:
 
-In order to achieve a better approximation to a normal distribution *C~max~* and *AUC~last~* data will be logarithmically transformed before analysis.
-The sources of variation will be treatments, periods, sequence, and subjects (nested within sequence) in Analysis of variance (ANOVA).
-Evaluation of treatment, period, sequence, and subject (nested within sequence) effects at 5% level of significance will be performed.
-From the result of this procedure, the two one-sided hypothesis at the 5% level of significance will be tested by constructing the 90% confidence interval for the geometric mean ratios test/reference products.
-The confidence interval is calculated by re-transformation of the shortest confidence interval for the difference of the log-transformed mean values.
-Differences in t~max~ will be evaluated non-parametrically.
-Bioequivalence will be concluded if the 90% confidence intervals for the geometric mean ratios of the products (test/reference) are fully contained within the limits of acceptance of 80% - 125% for *C~max~* and *AUC~last~*.
+In order to achieve a better approximation to a normal distribution *C~max~* and *AUC~last~* data will be logarithmically transformed before analysis. The sources of variation will be treatments, periods, sequence, and subjects (nested within sequence) in Analysis of variance (ANOVA). Evaluation of treatment, period, sequence, and subject (nested within sequence) effects at 5% level of significance will be performed. From the result of this procedure, the two one-sided hypothesis at the 5% level of significance will be tested by constructing the 90% confidence interval for the geometric mean ratios test/reference products. The confidence interval is calculated by re-transformation of the shortest confidence interval for the difference of the log-transformed mean values. Differences in t~max~ will be evaluated non-parametrically. Bioequivalence will be concluded if the 90% confidence intervals for the geometric mean ratios of the products (test/reference) are fully contained within the limits of acceptance of 80% - 125% for *C~max~* and *AUC~last~*.
 
 Bioequivalence will be concluded if the 90% confidence intervals for the geometric mean ratios of the products (test/reference) are fully contained within the limits of acceptance of 80% - 125% for *C~max~* and *AUC~last~*.
 
@@ -1510,9 +1380,7 @@ Missing data at any time point will be handled without imputation.
 
 ## Analyses Supporting Safety Objective(s)
 
-The number and percentage of subjects who experienced at least one AE are summarized by treatment group.
-Differences between sequence groups are assessed using the chi-square test or Fisher’s exact test, as appropriate.
-Additionally, adverse events are categorized and presented by severity, seriousness, and causal relationship to the IMP for each sequence group.
+The number and percentage of subjects who experienced at least one AE are summarized by treatment group. Differences between sequence groups are assessed using the chi-square test or Fisher’s exact test, as appropriate. Additionally, adverse events are categorized and presented by severity, seriousness, and causal relationship to the IMP for each sequence group.
 
 The analysis methods for vital signs, physical examinations, 12-lead ECG, and laboratory tests (including hematology, blood chemistry, and urinalysis) follow the procedures outlined in the Statistical Analysis Plan (SAP).
 
@@ -1532,27 +1400,17 @@ Not Applicable.
 
 ## Sample Size Determination
 
-Given the exploratory nature of this trial, it was considered sufficient to describe the statistical power for detecting differences with the predetermined sample size without directly applying the sample size calculation formula for hypothesis testing.
-However, an attempt was made to secure the maximum possible power (80%) based on known scientific evidence.
+Given the exploratory nature of this trial, it was considered sufficient to describe the statistical power for detecting differences with the predetermined sample size without directly applying the sample size calculation formula for hypothesis testing. However, an attempt was made to secure the maximum possible power (80%) based on known scientific evidence.
 
-Upon reviewing existing clinical trial data for `r drug_info$IPcode_A` and `r drug_info$IPcode_B`, it was observed that the inter-individual variability coefficient for the primary PK variables, AUC and C~max~, was highest for ***[INPUT NEEDED INFO MANUALLY]*** at `r geninfo$coeff_sample`%.
-Considering a typical BE evaluation criterion (point estimate difference of 0%, significance level of 0.05, and power of 80%), it was predicted that `r geninfo$MINsubj` participants would be needed.
-Factoring in a drop-out rate of approximately `r geninfo$dropout_percent`, the target sample size was set at `r cohort_info$total_N` participants.
+Upon reviewing existing clinical trial data for `r drug_info$IPcode_A` and `r drug_info$IPcode_B`, it was observed that the inter-individual variability coefficient for the primary PK variables, AUC and C~max~, was highest for ***\[INPUT NEEDED INFO MANUALLY\]*** at `r geninfo$coeff_sample`%. Considering a typical BE evaluation criterion (point estimate difference of 0%, significance level of 0.05, and power of 80%), it was predicted that `r geninfo$MINsubj` participants would be needed. Factoring in a drop-out rate of approximately `r geninfo$dropout_percent`, the target sample size was set at `r cohort_info$total_N` participants.
 
 </br>
 
 ## Protocol Deviations
 
-A deviation from the protocol is an unintended or unanticipated departure from the procedures or processes approved by the Sponsor or its designee and the IRB and agreed to by the Investigator.
-A significant deviation occurs when there is non-adherence to the protocol by the participant or Investigator that results in a significant, additional risk to the subject.
-Significant deviations can include non-adherence to inclusion or exclusion criteria, enrollment of the participant without prior Sponsor approval, or non-adherence to FDA regulations or International Council for Harmonization (ICH) Good Clinical Practice (GCP) guidelines, and will lead to the participant being withdrawn from the study (Section 7).
+A deviation from the protocol is an unintended or unanticipated departure from the procedures or processes approved by the Sponsor or its designee and the IRB and agreed to by the Investigator. A significant deviation occurs when there is non-adherence to the protocol by the participant or Investigator that results in a significant, additional risk to the subject. Significant deviations can include non-adherence to inclusion or exclusion criteria, enrollment of the participant without prior Sponsor approval, or non-adherence to FDA regulations or International Council for Harmonization (ICH) Good Clinical Practice (GCP) guidelines, and will lead to the participant being withdrawn from the study (Section 7).
 
-The Investigator or designee must document and explain in the participant’s source documentation any deviation from the approved protocol.
-The Investigator may implement a deviation from, or a change of, the protocol to eliminate an immediate hazard to participants without prior IRB approval.
-As soon as possible after such an occurrence, the implemented deviation or change, the reasons for it, and any proposed protocol amendments should be submitted to the IRB for review and approval, to the Sponsor or its designee for agreement, and to the regulatory authorities, if required.
-Protocol deviations will be documented by the medical monitor throughout the course of monitoring visits.
-Investigators will be notified in writing by the monitor of deviations.
-The IRB should be notified of all protocol deviations in a timely manner.
+The Investigator or designee must document and explain in the participant’s source documentation any deviation from the approved protocol. The Investigator may implement a deviation from, or a change of, the protocol to eliminate an immediate hazard to participants without prior IRB approval. As soon as possible after such an occurrence, the implemented deviation or change, the reasons for it, and any proposed protocol amendments should be submitted to the IRB for review and approval, to the Sponsor or its designee for agreement, and to the regulatory authorities, if required. Protocol deviations will be documented by the medical monitor throughout the course of monitoring visits. Investigators will be notified in writing by the monitor of deviations. The IRB should be notified of all protocol deviations in a timely manner.
 
 \pagebreak
 
@@ -1564,9 +1422,7 @@ This clinical study was designed and shall be implemented and reported in accord
 
 The protocol, protocol amendments, ICF, investigational brochure (IB), and other relevant documents (e.g., advertisements) must be submitted to an IRB/IEC by the Investigator and reviewed and approved by the IRB/IEC before the study is initiated.
 
-The IRB/IEC and relevant regulatory authority must be notified of any significant amendment to the protocol, as applicable.
-Necessary approvals must be given before changes are implemented.
-The Investigator will be responsible for the following:
+The IRB/IEC and relevant regulatory authority must be notified of any significant amendment to the protocol, as applicable. Necessary approvals must be given before changes are implemented. The Investigator will be responsible for the following:
 
 -   Providing written summaries of the status of the study to the IRB/IEC annually or more frequently in accordance with the requirements, policies, and procedures established by the IRB/IEC
 
@@ -1584,33 +1440,25 @@ Not Applicable.
 
 ## Informed Consent Process
 
-The Investigator will ensure that the participant is given full and adequate oral and written information about the nature, purpose, possible risk and benefit of the study.
-Participants must also be notified that they are free to discontinue the study at any time without prejudice.
-The participant should be given the opportunity to ask questions and allowed time to consider the information provided before voluntarily signing the written ICF.
+The Investigator will ensure that the participant is given full and adequate oral and written information about the nature, purpose, possible risk and benefit of the study. Participants must also be notified that they are free to discontinue the study at any time without prejudice. The participant should be given the opportunity to ask questions and allowed time to consider the information provided before voluntarily signing the written ICF.
 
-The participant’s signed and dated informed consent must be obtained before conducting any study procedures.
-The participants will be informed of their rights to privacy but will be made aware that the study data will be submitted to the Sponsor and possibly to drug regulatory authorities for review and evaluation.
-They will be informed also that the study monitor may inspect their medical records to verify the accuracy and completeness of the study records and results.
+The participant’s signed and dated informed consent must be obtained before conducting any study procedures. The participants will be informed of their rights to privacy but will be made aware that the study data will be submitted to the Sponsor and possibly to drug regulatory authorities for review and evaluation. They will be informed also that the study monitor may inspect their medical records to verify the accuracy and completeness of the study records and results.
 
 The acquisition of informed consent should be documented in the participant’s medical records, as required, and the ICF will be signed and personally dated by the participant and by the person who conducted the informed consent discussion.
 
-The Investigator must maintain the original, signed ICF.
-A copy of the signed ICF must be given to the participant or legal representative.
-The date that informed consent was signed will be recorded on the eCRF.
+The Investigator must maintain the original, signed ICF. A copy of the signed ICF must be given to the participant or legal representative. The date that informed consent was signed will be recorded on the eCRF.
 
 </br>
 
 ## Data Protection
 
-Participants will be assigned a unique identifier by the Sponsor.
-Any participant records or datasets that are transferred to the Sponsor will contain the identifier only; participant names or any information which would make the participant identifiable will not be transferred.
+Participants will be assigned a unique identifier by the Sponsor. Any participant records or datasets that are transferred to the Sponsor will contain the identifier only; participant names or any information which would make the participant identifiable will not be transferred.
 
-The participant must be informed that his/her personal study-related data will be used by the Sponsor in accordance with local data protection law.
-The level of disclosure must also be explained to the participant.
+The participant must be informed that his/her personal study-related data will be used by the Sponsor in accordance with local data protection law. The level of disclosure must also be explained to the participant.
 
 The participant must be informed that his/her medical records may be examined by auditors or other authorized personnel appointed by the Sponsor, by appropriate IRB/IEC members, and by inspectors from regulatory authorities.
 
-`r geninfo$sponsor_name` will store anonymized data [i.e., data that has been anonymized through removal of elements that will identify the individual directly so that the individual is no longer uniquely identifiable] in the study databases for no less than 15 years after the completion of the study or until the purposes of collection and use are attained, after which data will be destroyed.
+`r geninfo$sponsor_name` will store anonymized data \[i.e., data that has been anonymized through removal of elements that will identify the individual directly so that the individual is no longer uniquely identifiable\] in the study databases for no less than 15 years after the completion of the study or until the purposes of collection and use are attained, after which data will be destroyed.
 
 Health authorities and regulatory authorities may retain and utilize such information for the period set forth in applicable law or as duly determined at the relevant regulatory authority’s discretion.
 
@@ -1618,8 +1466,7 @@ Health authorities and regulatory authorities may retain and utilize such inform
 
 ## Early Site Closure or Trial Termination
 
-The Sponsor reserves the right to close the study site or terminate the study at any time for any reason at their sole discretion.
-A study site is considered closed when all required documents and study supplies have been collected and a study-site closure visit has been performed.
+The Sponsor reserves the right to close the study site or terminate the study at any time for any reason at their sole discretion. A study site is considered closed when all required documents and study supplies have been collected and a study-site closure visit has been performed.
 
 The Investigator may initiate study-site closure at any time, provided there is reasonable cause and sufficient notice is given in advance of the intended termination.
 
@@ -1643,23 +1490,17 @@ Reasons for the early closure of a study site by the Sponsor or Investigator may
 
 ### Disclosure of Clinical Trial Information
 
-In order to promptly share information about this clinical trial with the public and comply with relevant laws, regulations, and guidelines, the sponsor will post key details of the clinical trial protocol on ClinicalTrials.gov and/or other publicly available databases prior to the start of participant enrollment.
-If necessary, the sponsor will also post clinical trial results after completion of the analysis.
+In order to promptly share information about this clinical trial with the public and comply with relevant laws, regulations, and guidelines, the sponsor will post key details of the clinical trial protocol on ClinicalTrials.gov and/or other publicly available databases prior to the start of participant enrollment. If necessary, the sponsor will also post clinical trial results after completion of the analysis.
 
 </br>
 
 ### Policy on Report Submission and Publication
 
-1)  The sponsor should endeavor to facilitate the smooth exchange of relevant scientific information.
-    Any presentation or publication of the results from this trial must align with the sponsor’s plans.
-    The rights of the investigator and the sponsor concerning publication of the trial results shall be specified in the contract.
+1)  The sponsor should endeavor to facilitate the smooth exchange of relevant scientific information. Any presentation or publication of the results from this trial must align with the sponsor’s plans. The rights of the investigator and the sponsor concerning publication of the trial results shall be specified in the contract.
 
-2)  All data generated from this clinical trial are considered confidential and are the exclusive property of the sponsor (`r geninfo$sponsor_name`).
-    The findings of this clinical trial will be reported through a Clinical Study Report (CSR) prepared by the sponsor, which includes the eCRF data from the clinical trial sites.
+2)  All data generated from this clinical trial are considered confidential and are the exclusive property of the sponsor (`r geninfo$sponsor_name`). The findings of this clinical trial will be reported through a Clinical Study Report (CSR) prepared by the sponsor, which includes the eCRF data from the clinical trial sites.
 
-3)  The sponsor has the right to publish or disclose the results and related information from this clinical trial without the investigator’s approval.
-    If the investigator wishes to publish or present any information obtained from this clinical trial, the investigator must obtain prior approval from the sponsor before any publication or presentation.
-    In this case, the investigator should provide the sponsor with draft publications, abstracts, or detailed summaries of any proposed presentations at least 30 days before submission for publication or presentation to allow for sponsor review.
+3)  The sponsor has the right to publish or disclose the results and related information from this clinical trial without the investigator’s approval. If the investigator wishes to publish or present any information obtained from this clinical trial, the investigator must obtain prior approval from the sponsor before any publication or presentation. In this case, the investigator should provide the sponsor with draft publications, abstracts, or detailed summaries of any proposed presentations at least 30 days before submission for publication or presentation to allow for sponsor review.
 
 4)  The sponsor reserves the right to remove any confidential or proprietary information from the draft documents provided and may postpone publication or presentation for up to 60 days to allow for patent filings if necessary.
 
@@ -1669,15 +1510,13 @@ If necessary, the sponsor will also post clinical trial results after completion
 
 ## Quality Tolerance Limits
 
-Quality tolerance limits will be predefined in the Integrated Quality Risk Management Plan to identify systematic issues that can impact patient safety and/or reliability of study results.
-These predefined parameters will be monitored during the study, and important deviations from the quality tolerance limits and remedial actions taken will be summarized in the clinical study report (CSR).
+Quality tolerance limits will be predefined in the Integrated Quality Risk Management Plan to identify systematic issues that can impact patient safety and/or reliability of study results. These predefined parameters will be monitored during the study, and important deviations from the quality tolerance limits and remedial actions taken will be summarized in the clinical study report (CSR).
 
 </br>
 
 ## Data Quality Assurance
 
--   All participant data relating to the study will be recorded on eCRF unless transmitted to the Sponsor or designee electronically (e.g., laboratory data).
-    The Investigator is responsible for verifying that data entries are accurate and correct by physically or electronically signing the eCRF.
+-   All participant data relating to the study will be recorded on eCRF unless transmitted to the Sponsor or designee electronically (e.g., laboratory data). The Investigator is responsible for verifying that data entries are accurate and correct by physically or electronically signing the eCRF.
 
 -   The Investigator must maintain accurate documentation (source data) that supports the information entered in the eCRF.
 
@@ -1685,25 +1524,19 @@ These predefined parameters will be monitored during the study, and important de
 
 -   The Sponsor or designee is responsible for the data management of this study including quality checking of the data.
 
--   Study monitors will perform ongoing source data verification to confirm that data entered into the eCRF by authorized site personnel are accurate, complete, and verifiable from source documents; that the safety and rights of participants are being protected; and that the study is being conducted in accordance with the currently approved protocol and any other study agreements, ICH GCP, and all applicable regulatory requirements.
-    Study monitors will communicate with investigative sites on a regular basis regarding the study and all protocol deviations will be appropriately documented by the Investigator or designee, and study monitors.
+-   Study monitors will perform ongoing source data verification to confirm that data entered into the eCRF by authorized site personnel are accurate, complete, and verifiable from source documents; that the safety and rights of participants are being protected; and that the study is being conducted in accordance with the currently approved protocol and any other study agreements, ICH GCP, and all applicable regulatory requirements. Study monitors will communicate with investigative sites on a regular basis regarding the study and all protocol deviations will be appropriately documented by the Investigator or designee, and study monitors.
 
--   Records and documents, including signed ICFs, pertaining to the conduct of this study must be retained by the investigator for ***[INSERT MANUALLY ACCORDING TO INSTITUTION GUIDELINE]*** years after study completion unless local regulations or institutional policies require a longer retention period.
-    No records may be destroyed during the retention period without the written approval of the Sponsor.
-    No records may be transferred to another location or party without written notification to the Sponsor.
+-   Records and documents, including signed ICFs, pertaining to the conduct of this study must be retained by the investigator for ***\[INSERT MANUALLY ACCORDING TO INSTITUTION GUIDELINE\]*** years after study completion unless local regulations or institutional policies require a longer retention period. No records may be destroyed during the retention period without the written approval of the Sponsor. No records may be transferred to another location or party without written notification to the Sponsor.
 
 </br>
 
 ## Source Data
 
--   Source documents provide evidence for the existence of the participant and substantiate the integrity of the data collected.
-    Source documents are filed at the investigative site.
+-   Source documents provide evidence for the existence of the participant and substantiate the integrity of the data collected. Source documents are filed at the investigative site.
 
 -   The Investigator or designee will prepare and maintain adequate and accurate source documents (medical records, ECGs, AE and concomitant medication reporting, and raw data collection forms) designed to record all observations and other pertinent data for each participant.
 
--   Data entered in the eCRF that are transcribed from source documents must be consistent with the source documents or the discrepancies must be explained.
-    The Investigator may need to request previous medical records or transfer records, depending on the study.
-    Also, current medical records must be available.
+-   Data entered in the eCRF that are transcribed from source documents must be consistent with the source documents or the discrepancies must be explained. The Investigator may need to request previous medical records or transfer records, depending on the study. Also, current medical records must be available.
 
 \pagebreak
 
@@ -1977,9 +1810,7 @@ For the purposes of this study, reproductive status is defined as follows:
 
     -   Surgically sterile for at least 6 weeks at screening (defined as having undergone one of the following procedures: hysterectomy, bilateral oophorectomy or bilateral salpingectomy).
 
-    -   Postmenopausal at screening (defined as no menses for 12 months without an alternative medical cause).
-        An FSH level in the postmenopausal range (FSH \>40 IU/L) may be used to confirm a postmenopausal state in younger women (eg, those \<45 year old) or women who are not using hormonal contraception or hormonal replacement therapy.
-        However, in the absence of 12 months of amenorrhea, a single FSH measurement is insufficient.
+    -   Postmenopausal at screening (defined as no menses for 12 months without an alternative medical cause). An FSH level in the postmenopausal range (FSH \>40 IU/L) may be used to confirm a postmenopausal state in younger women (eg, those \<45 year old) or women who are not using hormonal contraception or hormonal replacement therapy. However, in the absence of 12 months of amenorrhea, a single FSH measurement is insufficient.
 
 -   Female who ***is*** **of childbearing potential**: following menarche and until becoming postmenopausal unless permanently sterile by the definition above.
 
@@ -1989,8 +1820,7 @@ For the purposes of this study, reproductive status is defined as follows:
 
 In this study, the use of effective contraception is required for subjects of childbearing potential who are sexually active with a nonsterilized male partner for the duration of the study and for `r geninfo$contraception` days thereafter.
 
-The failure rates of contraceptives that are used consistently and correctly may differ in typical use.
-Therefore, when study participation requires any of these methods of contraception to be used, subjects must commit to using them:
+The failure rates of contraceptives that are used consistently and correctly may differ in typical use. Therefore, when study participation requires any of these methods of contraception to be used, subjects must commit to using them:
 
 -   Consistently throughout the required period.
 
@@ -2093,14 +1923,11 @@ IUD: intrauterine device; IUS: intrauterine hormone-releasing system;
 
 ^a^Hormonal contraceptives must be stabilized for at least 35 days before the start of study drug.
 
-^b^Sexual abstinence is considered a highly effective method only if defined as refraining from heterosexual intercourse during the entire period of risk associated with the study treatment.
-The reliability of sexual abstinence needs to be evaluated in relation to the duration of the study and the preferred and usual lifestyle of the subject.
+^b^Sexual abstinence is considered a highly effective method only if defined as refraining from heterosexual intercourse during the entire period of risk associated with the study treatment. The reliability of sexual abstinence needs to be evaluated in relation to the duration of the study and the preferred and usual lifestyle of the subject.
 
-^c^A vasectomy is a highly effective contraceptive method only if the absence of sperm has been confirmed.
-If not, an additional effective method of contraception should be used.
+^c^A vasectomy is a highly effective contraceptive method only if the absence of sperm has been confirmed. If not, an additional effective method of contraception should be used.
 
-^d^For subjects of childbearing ability, having a vasectomized partner is a highly effective contraception method provided that the partner is the subject’s sole partner and that the absence of sperm has been confirmed.
-If not, an additional effective method of contraception should be used.
+^d^For subjects of childbearing ability, having a vasectomized partner is a highly effective contraception method provided that the partner is the subject’s sole partner and that the absence of sperm has been confirmed. If not, an additional effective method of contraception should be used.
 
 \pagebreak
 
@@ -2108,8 +1935,7 @@ If not, an additional effective method of contraception should be used.
 
 The following safety laboratory tests will be performed at times defined in the SoA (Section 1.3).
 
-Additional safety samples may be collected if clinically indicated at the discretion of the investigator.
-The date, time of collection, and results will be recorded on the appropriate eCRF.
+Additional safety samples may be collected if clinically indicated at the discretion of the investigator. The date, time of collection, and results will be recorded on the appropriate eCRF.
 
 ```{r}
 
@@ -2178,7 +2004,7 @@ file_path <- if (!is.null(rmarkdown::metadata$input)) {
 if (file.exists(file_path)) {
   script_lines <- readLines(file_path, warn = FALSE)
 } else {
-  stop("파일을 찾을 수 없습니다. 정확한 경로를 입력하세요.")
+  stop("File not found. Please provide the correct file path.")
 }
 
 filtered_lines <- script_lines[!grepl("<-", script_lines)]
