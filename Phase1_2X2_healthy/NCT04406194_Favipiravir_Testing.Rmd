@@ -2181,7 +2181,7 @@ file_path <- if (!is.null(rmarkdown::metadata$input)) {
 if (file.exists(file_path)) {
   script_lines <- readLines(file_path, warn = FALSE)
 } else {
-  stop("파일을 찾을 수 없습니다. 정확한 경로를 입력하세요.")
+  stop("File not found. Please provide the correct file path.")
 }
 
 filtered_lines <- script_lines[!grepl("<-", script_lines)]
